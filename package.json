@@ -1,0 +1,35 @@
+{
+  "name": "game-of-life-nodejs-server",
+  "version": "1.0.0",
+  "description": "game-of-life server side in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendy61336/game-of-life-nodejs-server.git"
+  },
+  "keywords": [
+    "game-of-life"
+  ],
+  "author": "WendyTseng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wendy61336/game-of-life-nodejs-server/issues"
+  },
+  "homepage": "https://github.com/wendy61336/game-of-life-nodejs-server#readme",
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "ws": "^3.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  }
+}
