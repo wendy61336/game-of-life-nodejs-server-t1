@@ -17,9 +17,9 @@ $ npm start
 
 2. When receive client's init request, randomly generate userId & color for this client, record the mapping relationship between userId & color 
 
-3. When receive client's click request, base on click location & assigned pattern & userId, record a list of next checkerboard square. 
+3. When receive client's click request, base on click location & assigned pattern & userId, record a list of ClickSquare
 
-4. EverySecond use the rule of game-of-life to generate the next checkerboard, after calculating the next checkerboard. The list of next checkerboard square from client click request need to be covered directly to the result (Color will be based on the lastest clicker. Click event's priority is higher than calculating result)
+4. EverySecond use the rule of game-of-life to generate the next checkerboard, after calculating the next checkerboard, The list of ClickSquare need to be covered directly to the result (Color will be based on the lastest clicker. Click event's priority is higher than calculating result)
 Finally boardcast to every connected clients by websocket.
 
 # Coding files
