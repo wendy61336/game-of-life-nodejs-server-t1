@@ -2,13 +2,23 @@ import{ ColorInfo , SquareInfo, NeiborInfo} from './model'
 import{ initBoard} from './utils'
 import{ receiveInit, receiveClick} from './utils'
 import{ getNextSquareInfo, isAlive } from './utils'
-const boardSize = 40;
 
-var WebSocketServer = require('ws').Server, wss = new WebSocketServer()
+
+var WebSocketServer = require("ws").Server
+var http = require("http")
+var port = process.env.PORT || 5000
+var server = http.createServer(app)
+server.listen(port)
+console.log("http server listening on %d", port)
+
+var wss = new WebSocketServer({server: server})
+console.log("websocket server created")
+
 var userNo = 0;
 let userColorMap = new Map(); 
 let squareInfoList = [];
 let restartFlag = false;
+const boardSize = 40;
 
 // initailize game board,初始化空白棋盤
 initBoard(40,squareInfoList);
