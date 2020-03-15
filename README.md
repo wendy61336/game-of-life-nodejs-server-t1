@@ -24,14 +24,12 @@ Finally boardcast to every connected clients by websocket.
 
 # Coding files
 
-game-of-life-nodejs-server-t1/ws.js
---> contains must of logic
+game-of-life-nodejs-server-t1/ws.js --> contains must of logic
 1. receive message from clients
 2. calculate the game-of-life rules then update once per second
 3. websocket issue
 
-game-of-life-nodejs-server-t1/pattern.js  
---> define the patterns of game-of-life
+game-of-life-nodejs-server-t1/pattern.js  --> define the patterns of game-of-life
 The client's click location is the must left-upper square of the patterns.
 Every pattern can be represent by two element
 1. a list of PatternShift( xShift, yShift )
