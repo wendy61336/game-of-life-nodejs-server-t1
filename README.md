@@ -32,8 +32,11 @@ game-of-life-nodejs-server-t1/ws.js
 
 game-of-life-nodejs-server-t1/pattern.js  
 --> define the patterns of game-of-life
-The concept is, the client's click location is the must left-upper square of the patterns.
-So every pattern can be represent by a list of PatternShift( xShift, yShift ) & clickLocation(currentX, currentY).
+The client's click location is the must left-upper square of the patterns.
+Every pattern can be represent by two element
+1. a list of PatternShift( xShift, yShift )
+2. clickLocation(currentX, currentY).
+
 
 
 
