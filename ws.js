@@ -4,6 +4,7 @@ import{ receiveInit, receiveClick} from './utils'
 import{ getNextSquareInfo, isAlive } from './utils'
 
 
+var express = require("express")
 var app = express()
 var WebSocketServer = require("ws").Server
 var http = require("http")
