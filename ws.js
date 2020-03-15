@@ -4,7 +4,7 @@ import{ receiveInit, receiveClick} from './utils'
 import{ getNextSquareInfo, isAlive } from './utils'
 const boardSize = 40;
 
-var WebSocketServer = require('ws').Server, wss = new WebSocketServer({port: 40510})
+var WebSocketServer = require('ws').Server, wss = new WebSocketServer()
 var userNo = 0;
 let userColorMap = new Map(); 
 let squareInfoList = [];
